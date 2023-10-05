@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SvyatAuto</title>
+    <link rel="stylesheet" href="feedback.css" />
+    <link href="https://fonts.google.com/specimen/Roboto" />
+<body>
+    <header>
+        <h1>SvyatAuto</h1>
+        <nav>
+            <ul>
+                <li><a href="#"> О нас</a></li>
+                <li><a href="#"> Услуги</a></li>
+                <li><a href="#"> Галерея</a></li>
+                <li><a href="#"> Отзывы</a></li>
+                <li><a href="#"> Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class = "forma">
+        <div class="feedback-form">
+            <form action="https://httpbin.org/post" method="POST">
+                <label for="fullName">ФИО:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br><br>
+        
+                <label>Откуда узнали о нас:</label><br>
+                <input type="radio" id="radioWebsite" name="source" value="Веб-сайт">
+                <label for="radioWebsite">Веб-сайт</label><br>
+                <input type="radio" id="radioSocialMedia" name="source" value="Социальные медиа">
+                <label for="radioSocialMedia">Социальные медиа</label><br>
+                <input type="radio" id="radioFriend" name="source" value="От друга">
+                <label for="radioFriend">От друга</label><br><br>
+        
+                <label for="messageType">Тип обращения:</label>
+                <select id="messageType" name="messageType">
+                    <option value="Жалоба">Жалоба</option>
+                    <option value="Предложение">Предложение</option>
+                </select><br><br>
+        
+                <label for="message">Текст сообщения:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+        
+                <label for="attachments">Вложения:</label>
+                <input type="file" id="attachments" name="attachments"><br><br>
+        
+                <label for="consent">Даю согласие на обработку персональных данных:</label>
+                <input type="checkbox" id="consent" name="consent" required><br><br>
+        
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h3> Контакты</h3>
+        <p> svyatauto@gmail.com</p>
+        <p> +7 495 555-05-05</p>
+        <p>Copyright © 2023 SvyatAuto</p>
+    </footer>
+</body>
+</html>

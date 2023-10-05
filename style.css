@@ -26,7 +26,7 @@ nav {
 
 nav li{
     display: inline-block;
-    margin: 0 90px;
+    margin: 0 60px;
     margin-top: 17px;
     
 }
@@ -74,5 +74,10 @@ nav a {
     text-align: center;
 }
 
+
+nav a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
 
 
