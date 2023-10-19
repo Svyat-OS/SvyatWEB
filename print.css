@@ -1,0 +1,16 @@
+
+header,footer, img {
+  display: none;
+}
+
+/* Убираем фоны и границы */
+body {
+  background: none;
+  border: none;
+}
+
+/* Устанавливаем размер шрифта и отступы для лучшей читаемости */
+h1, h2, h3, p {
+  font-size: 16px;
+  margin: 10px 0;
+}
